@@ -46,7 +46,7 @@ export default function App() {
             <FlexItem max={itemCount} key={idx} index={idx + 1}>
               {(codeItem) => (
                 <details>
-                  <summary>{`<>`}</summary>
+                  <summary style={{ cursor: "pointer" }}>{`<> source`}</summary>
                   <SyntaxHighlighter language="css" style={docco}>
                     {codeItem}
                   </SyntaxHighlighter>

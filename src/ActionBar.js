@@ -92,7 +92,7 @@ export default function ActionBar({ onChange }) {
       </div>
 
       <details style={{ padding: 10 }}>
-        <summary>{"<>"}</summary>
+        <summary style={{ cursor: "pointer" }}>{"<> source"}</summary>
         <SyntaxHighlighter language="css" style={docco}>
           {codeParent}
         </SyntaxHighlighter>
