@@ -1,0 +1,26 @@
+.App {
+  font-family: sans-serif;
+}
+
+.item {
+  margin: 10px;
+  background: #eeeeee;
+  padding: 10px;
+  max-width: 340px;
+}
+
+.item-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.item-content > input {
+  min-width: 100px;
+  margin-right: 10px;
+}
+
+.item-content > label {
+  min-width: 70px;
+}
