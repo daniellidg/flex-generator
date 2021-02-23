@@ -44,12 +44,9 @@ export default function ActionBar({ onChange }) {
   `;
 
   return (
-    <div className="App">
+    <div>
       <div
         style={{
-          padding: 10,
-          margin: 10,
-          border: "1px solid",
           display: "flex",
           flexWrap: "wrap",
           alignItems: "center"
@@ -85,12 +82,15 @@ export default function ActionBar({ onChange }) {
           onChange={(value) => handleActionChange("alignContent", value)}
           options={constants.alignContent}
         />
-        <div
-          style={{ margin: 10 }}
-        >{`flex-flow: <flex-direction> <flex-wrap>`}</div>
       </div>
 
-      <details style={{ padding: 10, margin: "10px 0" }}>
+      <div style={{ padding: 10 }}>
+        <SyntaxHighlighter language="css" style={docco}>
+          {`flex-flow: <flex-direction> <flex-wrap>`}
+        </SyntaxHighlighter>
+      </div>
+
+      <details style={{ padding: 10, marginBottom: 10 }}>
         <summary style={{ cursor: "pointer" }}>{"<> source"}</summary>
         <SyntaxHighlighter language="css" style={docco}>
           {codeParent}

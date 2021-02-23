@@ -1,5 +1,7 @@
 .App {
   font-family: sans-serif;
+  display: flex;
+  height: 100vh;
 }
 
 .item {
@@ -7,6 +9,7 @@
   background: #eeeeee;
   padding: 10px;
   max-width: 340px;
+  max-height: 340px;
 }
 
 .item-content {

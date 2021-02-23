@@ -16,24 +16,26 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1 style={{ padding: 10 }}>Flex</h1>
-      <Dropdown
-        labelName="item count"
-        defaultValue={itemCount}
-        onChange={(value) => setItemCount(value)}
-        options={Array(20)
-          .fill(0)
-          .map((item, idx) => 1 + idx)}
-      />
+      <div style={{ width: "25%" }}>
+        <h1 style={{ padding: 10 }}>Flex</h1>
+        <Dropdown
+          labelName="item count"
+          defaultValue={itemCount}
+          onChange={(value) => setItemCount(value)}
+          options={Array(20)
+            .fill(0)
+            .map((item, idx) => 1 + idx)}
+        />
 
-      <ActionBar onChange={(value) => setActionValue(value)} />
-
+        <ActionBar onChange={(value) => setActionValue(value)} />
+      </div>
       <div
         style={{
           display: "flex",
           background: "lightblue",
           minHeight: 300,
           overflow: "auto",
+          flex: 1,
           justifyContent: actionValue.justifyContent,
           alignItems: actionValue.alignItems,
           flexDirection: actionValue.flexDirection,
