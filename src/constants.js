@@ -5,48 +5,20 @@ const constants = {
     "center",
     "space-between",
     "space-around",
-    "space-evenly",
-    "initial",
-    "inherit"
+    "space-evenly"
   ],
-  alignItems: [
-    "stretch",
-    "center",
-    "flex-start",
-    "flex-end",
-    "baseline",
-    "initial",
-    "inherit"
-  ],
-  flexDirection: [
-    "row",
-    "row-reverse",
-    "column",
-    "column-reverse",
-    "initial",
-    "inherit"
-  ],
-  flexWrap: ["nowrap", "wrap", "wrap-reverse", "initial", "inherit"],
+  alignItems: ["stretch", "center", "flex-start", "flex-end", "baseline"],
+  flexDirection: ["row", "row-reverse", "column", "column-reverse"],
+  flexWrap: ["nowrap", "wrap", "wrap-reverse"],
   alignContent: [
     "stretch",
     "center",
     "flex-start",
     "flex-end",
     "space-between",
-    "space-around",
-    "initial",
-    "inherit"
+    "space-around"
   ],
-  alignSelf: [
-    "auto",
-    "stretch",
-    "center",
-    "flex-start",
-    "flex-end",
-    "baseline",
-    "initial",
-    "inherit"
-  ]
+  alignSelf: ["auto", "stretch", "center", "flex-start", "flex-end", "baseline"]
 };
 
 constants.initialActionValue = {

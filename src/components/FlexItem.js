@@ -1,7 +1,9 @@
 import React from "react";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 import Dropdown from "./Dropdown";
-import constants from "./constants";
+import constants from "../constants";
 
 export default function FlexItem({ children, index, max }) {
   const [orderValue, setOrderValue] = React.useState(0);
@@ -89,7 +91,11 @@ export default function FlexItem({ children, index, max }) {
           <span>{flexBasisValue}</span>
         </div>
 
-        <div>{`flex: none | <flex-grow> <flex-shrink> <flex-basis>`}</div>
+        <div style={{ margin: "10px 0" }}>
+          <SyntaxHighlighter language="css" style={docco}>
+            {`flex: <flex-grow> <flex-shrink> <flex-basis>`}
+          </SyntaxHighlighter>
+        </div>
 
         {children ? children(codeItem) : null}
       </div>

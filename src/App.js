@@ -4,9 +4,9 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 import constants from "./constants";
-import Dropdown from "./Dropdown";
-import FlexItem from "./FlexItem";
-import ActionBar from "./ActionBar";
+import Dropdown from "./components/Dropdown";
+import FlexItem from "./components/FlexItem";
+import ActionBar from "./components/ActionBar";
 
 export default function App() {
   const [itemCount, setItemCount] = React.useState(5);
@@ -16,6 +16,7 @@ export default function App() {
 
   return (
     <div className="App">
+      <h1 style={{ padding: 10 }}>Flex</h1>
       <Dropdown
         labelName="item count"
         defaultValue={itemCount}

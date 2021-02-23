@@ -1,9 +1,8 @@
 import React from "react";
-import "./styles.css";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-import constants from "./constants";
+import constants from "../constants";
 import Dropdown from "./Dropdown";
 
 export default function ActionBar({ onChange }) {
@@ -91,7 +90,7 @@ export default function ActionBar({ onChange }) {
         >{`flex-flow: <flex-direction> <flex-wrap>`}</div>
       </div>
 
-      <details style={{ padding: 10 }}>
+      <details style={{ padding: 10, margin: "10px 0" }}>
         <summary style={{ cursor: "pointer" }}>{"<> source"}</summary>
         <SyntaxHighlighter language="css" style={docco}>
           {codeParent}
